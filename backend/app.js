@@ -25,12 +25,6 @@ app.use(cors({ credentials: true, origin: "http://localhost:3000"} )),
 app.get('/api/keys/paypal', (req, res)=>{
   res.send(process.env.PAYPAL_CLIENT_ID || 'sb')
 })
-app.get('/api/keys/paypal', (req, res)=>{
-  res.send(process.env.PAYPAL_CLIENT_ID || 'sb')
-})
-app.get('/api/keys/paypal', (req, res)=>{
-  res.send(process.env.PAYPAL_CLIENT_ID || 'sb')
-})
 
 app.use(cookieParser());
 app.use(express.json());
